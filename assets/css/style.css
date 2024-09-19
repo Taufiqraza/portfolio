@@ -12697,6 +12697,8 @@ a.item-portfolio-static {
 .single-service.service__style--2.bg-color-gray,
 .single-service.service__style--2.bg-color-white {
     margin-top: 0;
+    border-radius: 15px;
+    box-shadow: 1px 2px 18px 2px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -18231,3 +18233,26 @@ a.purchase-btn:hover {
 }
 
 /*# sourceMappingURL=../maps/style.css.map */
+
+
+  
+@keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+  
+  .fadeInUp-animation {
+    animation: 1.5s fadeInUp ease forwards;
+  }
+  
+  .fadeInUp-element {
+    opacity: 0; /* Ensure the element is initially hidden */
+    visibility: hidden; /* Hide element until it's in view */
+  }
+  
